@@ -12,15 +12,8 @@ if __name__=="__main__":
     model = trained_model["model"] 
     device = trained_model["device"]
     model_weights_path = trained_model["weight_path"]
-    
-    # ========================================================================
-    # LOAD DATA & EVALUATE 
-    # ========================================================================
+  
     dataloader = create_single_dataloader(data_filepath_pq="./data/il6_Q144A_disjoint.parquet") 
-    
-    # for batch in dataloader:
-    #     print(batch.keys())
-    #     break 
     
     ts_results = test(model, dataloader, device, model_weights_path) 
     

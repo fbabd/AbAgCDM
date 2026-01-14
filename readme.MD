@@ -87,6 +87,6 @@ python train.py --config configs.json
 
 All experiments reported in the paper are run using fixed random seeds and predefined data splits. 
 
-To use the trained model, download "checkpoint" folder from here https://drive.google.com/drive/folders/1_UGkG5kVkslyhQelLAJ_SJto4moUiIYq?usp=sharing 
+To use the trained model, download the contents of "checkpoint" folder from here https://drive.google.com/drive/folders/1_UGkG5kVkslyhQelLAJ_SJto4moUiIYq?usp=sharing 
 and copy the folder inside `AbAgCDM`. 
 

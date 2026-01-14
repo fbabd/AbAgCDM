@@ -16,7 +16,7 @@ if __name__=="__main__":
     # ========================================================================
     # LOAD DATA & EVALUATE 
     # ========================================================================
-    dataloader = create_single_dataloader(data_filepath_pq="./_data/ab_splits/il6_Q144A_disjoint.parquet") 
+    dataloader = create_single_dataloader(data_filepath_pq="./data/il6_Q144A_disjoint.parquet") 
     
     # for batch in dataloader:
     #     print(batch.keys())

@@ -1,0 +1,40 @@
+{
+    "train_pq_file": "../_data/ab_splits/train.parquet", 
+    "val_pq_file": "../_data/ab_splits/val.parquet",
+    "test_pq_file":"../_data/ab_splits/test.parquet", 
+    
+    "encoder_name": "facebook/esm2_t12_35M_UR50D",
+    "freeze_encoder": false,
+    "contrastive_dim": 256,
+    "dropout": 0.1,
+    "temperature": 1.0,
+    "lambda_contrastive": 0.5,
+    "pooling_method": "mean",
+    "use_focal_loss": false,
+    "focal_alpha": 0.75,
+    "focal_gamma": 2.0,
+    "pos_weight": 32.0,
+
+    "batch_size": 80,
+    "max_length": 512,
+    "max_negatives": 30,
+    "num_workers": 1,
+    "load_frac_data": 1.0, 
+    "random_negatives": false,
+    
+    "num_epochs": 10,
+    "learning_rate": 2e-5,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "scheduler_type": "plateau",
+    "early_stopping_patience": 10,
+    "log_interval": 1,
+    "save_best_only": true,
+    "save_dir": "./checkpoints",
+    "seed": 42,
+    "device": "cuda",
+
+    "test_only": false,
+    "checkpoint": "checkpoints/best_model.pt" 
+
+  }

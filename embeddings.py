@@ -1078,20 +1078,14 @@ if __name__ == "__main__":
         emb_save_dir="./embeddings/il6_Q144A",
         compute_embeddings=True, 
         compute_silhouette=True,
-        data_file_pq="./_data/ab_splits/il6_Q144A_disjoint.parquet" 
+        data_file_pq="./data/il6_Q144A_disjoint.parquet" 
     )
     
     emb_extraction_visualization(
         emb_save_dir="./embeddings/il6_test",
         compute_embeddings=True, 
         compute_silhouette=True,
-        data_file_pq="./_data/ab_splits/test.parquet" 
-    )
-    
-    emb_extraction_visualization(
-        emb_save_dir="./embeddings/il6_wt_bind",
-        compute_embeddings=True, 
-        data_file_pq="./_data/ab_splits/il6_wt_bind.parquet" 
+        data_file_pq="./data/test.parquet" 
     )
     
 
